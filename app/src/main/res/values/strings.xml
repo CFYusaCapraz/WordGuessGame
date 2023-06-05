@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">WordGuess</string>
+    <string name="header">Welcome To The Word Guessing Game</string>
+    <string name="alpahbet_upper_case">ABCDEFGHIJKLMNOPQRSTUVXWYZ</string>
+    <string name="upper_case_hint">Only upper case letters are allowed</string>
+    <string name="button_guess">GUESS LETTER</string>
+    <string name="button_guess_word">Guess a word</string>
+</resources>

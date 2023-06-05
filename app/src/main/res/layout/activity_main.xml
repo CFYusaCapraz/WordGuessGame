@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark_blue"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView_Header"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/header"
+        android:textAlignment="center"
+        android:textColor="@color/dark_yellow"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.053" />
+
+    <LinearLayout
+        android:id="@+id/try_chance_area"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.24000001">
+
+        <TextView
+            android:id="@+id/textView_heart1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5sp"
+            android:layout_weight="1"
+            android:background="@drawable/heart" />
+
+        <TextView
+            android:id="@+id/textView_heart2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5sp"
+            android:layout_weight="1"
+            android:background="@drawable/heart" />
+
+        <TextView
+            android:id="@+id/textView_heart3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5sp"
+            android:layout_weight="1"
+            android:background="@drawable/heart" />
+
+        <TextView
+            android:id="@+id/textView_heart4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5sp"
+            android:layout_weight="1"
+            android:background="@drawable/heart" />
+
+        <TextView
+            android:id="@+id/textView_heart5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5sp"
+            android:layout_weight="1"
+            android:background="@drawable/heart" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/word_area"
+        android:layout_width="match_parent"
+        android:layout_height="75sp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.36">
+
+        <TextView
+            android:id="@+id/textView_1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="5sp"
+            android:layout_weight="1"
+            android:background="@drawable/suqare"
+            android:ems="10"
+            android:maxLength="1"
+            android:textAlignment="center"
+            android:textColor="@color/dark_blue"
+            android:textSize="45sp" />
+
+        <TextView
+            android:id="@+id/textView_2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="5sp"
+            android:layout_weight="1"
+            android:background="@drawable/suqare"
+            android:ems="10"
+            android:maxLength="1"
+            android:textAlignment="center"
+            android:textColor="@color/dark_blue"
+            android:textSize="45sp" />
+
+        <TextView
+            android:id="@+id/textView_3"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="5sp"
+            android:layout_weight="1"
+            android:background="@drawable/suqare"
+            android:ems="10"
+            android:maxLength="1"
+            android:textAlignment="center"
+            android:textColor="@color/dark_blue"
+            android:textSize="45sp" />
+
+        <TextView
+            android:id="@+id/textView_4"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="5sp"
+            android:layout_weight="1"
+            android:background="@drawable/suqare"
+            android:ems="10"
+            android:maxLength="1"
+            android:textAlignment="center"
+            android:textColor="@color/dark_blue"
+            android:textSize="45sp" />
+
+        <TextView
+            android:id="@+id/textView_5"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="5sp"
+            android:layout_weight="1"
+            android:background="@drawable/suqare"
+            android:ems="10"
+            android:maxLength="1"
+            android:textAlignment="center"
+            android:textColor="@color/dark_blue"
+            android:textSize="45sp" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/editText_Letter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:width="75sp"
+        android:autofillHints=""
+        android:background="@drawable/suqare"
+        android:ems="10"
+        android:inputType="textCapCharacters"
+        android:maxLength="1"
+        android:textAlignment="center"
+        android:textColor="@color/dark_blue"
+        android:textSize="45sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.47000003"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <Button
+        android:id="@+id/button_guess_letter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/dark_yellow"
+        android:text="@string/button_guess"
+        android:textColor="@color/dark_blue"
+        app:cornerRadius="6sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.56" />
+
+    <LinearLayout
+        android:id="@+id/word_try_area"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.73">
+
+        <EditText
+            android:id="@+id/editText_Word"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5sp"
+            android:ems="10"
+            android:hint="@string/upper_case_hint"
+            android:inputType="textCapCharacters"
+            android:maxLength="5"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="@color/dark_yellow"
+            android:textColorHint="#546E7A"
+            android:textSize="25sp" />
+
+        <Button
+            android:id="@+id/button_guess_word"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5sp"
+            android:layout_marginLeft="5sp"
+            android:layout_marginRight="5sp"
+            android:backgroundTint="@color/dark_yellow"
+            android:text="@string/button_guess_word"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="@color/dark_blue"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button_retry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/dark_yellow"
+        android:text="Retry"
+        android:textColor="@color/dark_blue"
+        app:icon="@drawable/baseline_autorenew_24"
+        app:iconTint="@color/dark_blue"
+        app:layout_constraintBottom_toTopOf="@+id/try_chance_area"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.943"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
