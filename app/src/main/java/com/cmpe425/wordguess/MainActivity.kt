@@ -25,10 +25,12 @@ class MainActivity : AppCompatActivity() {
 
         initComponents()
         word = databaseHelper.randomWord
+        print(word)
         databaseHelper.close()
         var position = 0
 
         btnGuessLetter.setOnClickListener {
+            print(word)
             if (edLetter.text.isNotEmpty()) {
                 if (onClickGuessLetter()) {
                     Toast.makeText(

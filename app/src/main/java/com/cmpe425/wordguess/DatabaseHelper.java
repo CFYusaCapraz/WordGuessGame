@@ -14,11 +14,12 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     private static final String COLUMN_WORD = "word";
 
     private static final String[] WORDS = {
-            "Apple", "Angel", "Beach", "Bread", "Chair", "Cloud", "Dance", "Earth", "Fruit", "Ghost",
-            "Happy", "House", "Juice", "Light", "Money", "Music", "Ocean", "Party", "Pizza", "Plant",
-            "Quiet", "River", "Smile", "Snake", "Space", "Spoon", "Storm", "Sugar", "Sunny", "Sweet",
-            "Tiger", "Train", "Water", "World"
+            "APPLE", "ANGEL", "BEACH", "BREAD", "CHAIR", "CLOUD", "DANCE", "EARTH", "FRUIT", "GHOST",
+            "HAPPY", "HOUSE", "JUICE", "LIGHT", "MONEY", "MUSIC", "OCEAN", "PARTY", "PIZZA", "PLANT",
+            "QUIET", "RIVER", "SMILE", "SNAKE", "SPACE", "SPOON", "STORM", "SUGAR", "SUNNY", "SWEET",
+            "TIGER", "TRAIN", "WATER", "WORLD"
     };
+
 
     public DatabaseHelper(Context context) {
         super(context, DATABASE_NAME, null, DATABASE_VERSION);
