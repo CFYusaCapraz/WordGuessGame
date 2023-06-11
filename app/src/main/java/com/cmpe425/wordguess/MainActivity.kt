@@ -15,17 +15,22 @@ class MainActivity : AppCompatActivity() {
     private lateinit var btnGuessWord: Button
     private lateinit var btnRetry: Button
     private lateinit var word: String
+    private lateinit var databaseHelper : DatabaseHelper
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        databaseHelper = DatabaseHelper(this)
 
         initComponents()
-        word = "HELLO"
+        word = databaseHelper.randomWord
+        print(word)
+        databaseHelper.close()
         var position = 0
 
         btnGuessLetter.setOnClickListener {
+            print(word)
             if (edLetter.text.isNotEmpty()) {
                 if (onClickGuessLetter()) {
                     Toast.makeText(
@@ -177,7 +182,9 @@ class MainActivity : AppCompatActivity() {
         findViewById<TextView>(R.id.textView_3).text = ""
         findViewById<TextView>(R.id.textView_4).text = ""
         findViewById<TextView>(R.id.textView_5).text = ""
-
+        databaseHelper = DatabaseHelper(this)
+        word = databaseHelper.randomWord;
+        databaseHelper.close()
         findViewById<TextView>(R.id.textView_heart1).visibility = View.VISIBLE
         findViewById<TextView>(R.id.textView_heart2).visibility = View.VISIBLE
         findViewById<TextView>(R.id.textView_heart3).visibility = View.VISIBLE
